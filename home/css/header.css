@@ -143,6 +143,7 @@ body{
     height: 30px!important;
     top: 5px;
     right: 5px;
+    color: #ececec;
 }
 /*购物车-我的订单模块*/
 .cart_oder{
@@ -155,13 +156,22 @@ body{
     margin-top: 30px;
 }
 .shoppingCart,.order{
-    width: 140px;
+    width: 100px;
     height: 40px;
+    text-align: center;
     border: 2px solid #69bbd3;
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 40px;
+}
+.shoppingCart{
+    background-color: #abdde5;
+    border-right: none;
+}
+.shoppingCart a{
+    color: white;
 }
 .order{
-    width: 120px;
+    width: 90px;
 }
 a{
     text-decoration: none;
@@ -173,20 +183,52 @@ a{
 .currentNotShow{
     display: none;
 }
+/*导航栏-图书分类*/
 .book-type-options{
+    padding-left: 50px;
+    margin-top: 0px;
     display: flex;
+    width: 1280px;
+    height: 40px;
+    overflow: hidden;
+    border-bottom: #abdde5 3px solid;
 }
 .book-type-options li{
     list-style: none;
-    margin-left: 20px;
+    margin-left: 10px;
     color: #323232;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 17px;
+    font-family: 黑体, serif;
+    font-weight:bolder;
+    width: 60px;
+    height: 20px;
+   margin-top: 10px;
+    overflow: hidden;
 }
-
-
-
-
+.book-type-options li a:hover{
+    color:#69bbd3;
+}
+.book-type-options .all{
+    margin-top: 0;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+  /*  line-height: 30px;*/
+    font-size: 18px;
+    background-color: #abdde5;
+}
+.book-type-options .all a{
+    line-height: 40px;
+    color: #fafafa;
+}
+/*右展菜单图标*/
+.right-icon{
+    position: absolute;
+    top: 138px;
+    left: 220px;
+    color: #fafafa;
+}
+/**/
 body{
     position: absolute;
     overflow: hidden;
