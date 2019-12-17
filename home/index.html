@@ -3,46 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>BookMall</title>
-    <link rel="stylesheet" href="css/default.css">
    <!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_1535851_dxjnv1ypiu.css">-->
     <script src="//at.alicdn.com/t/font_1535851_w0n8lg7kss.js"></script>
-    <style type="text/css">
-        .icon {
-            width: 1em; height: 1em;
-            vertical-align: -0.15em;
-            fill: currentColor;
-            overflow: hidden;
-        }
-    </style>
+    <script src="js/default.js"></script>
+    <link rel="stylesheet" href="css/default.css">
 </head>
 <body>
 <div class="header">
     <div class="tools">
         <div class="tools_area">
             配送至：
-            <a href="https://www.baidu.com/">北京</a>
+            <a href="javascript:;" class="currentArea">北京</a>
             <div class="icon_xiala">
                 <svg class="icon cla_icon " aria-hidden="true">
                     <use xlink:href="#icon-RectangleCopy"></use>
                 </svg>
             </div>
             <ul class="areaList">
-                <li><a href="">天津</a></li>
-                <li><a href="">深圳</a></li>
-                <li><a href="">广州</a></li>
-                <li><a href="javascript:;">上海</a></li>
-                <li><a href="javascript:;">南京</a></li>
-                <li><a href="javascript:;">杭州</a></li>
-                <li><a href="javascript:;">南昌</a></li>
-                <li><a href="javascript:;">武汉</a></li>
-                <li><a href="javascript:;">苏州</a></li>
-                <li><a href="javascript:;">沈阳</a></li>
-                <li><a href="javascript:;">郑州</a></li>
-                <li><a href="javascript:;">长沙</a></li>
-                <li><a href="javascript:;">青岛</a></li>
-                <li><a href="javascript:;">成都</a></li>
-                <li><a href="javascript:;">海南</a></li>
-                <li><a href="javascript:;">西安</a></li>
+                <li class="city"><a href="javascript:;">北京</a></li>
+                <li class="city"><a href="javascript:;">深圳</a></li>
+                <li class="city"><a href="javascript:;">广州</a></li>
+                <li class="city"><a href="javascript:;">上海</a></li>
+                <li class="city"><a href="javascript:;">南京</a></li>
+                <li class="city"><a href="javascript:;">杭州</a></li>
+                <li class="city"><a href="javascript:;">南昌</a></li>
+                <li class="city"><a href="javascript:;">武汉</a></li>
+                <li class="city"><a href="javascript:;">苏州</a></li>
+                <li class="city"><a href="javascript:;">沈阳</a></li>
+                <li class="city"><a href="javascript:;">郑州</a></li>
+                <li class="city"><a href="javascript:;">长沙</a></li>
+                <li class="city"><a href="javascript:;">青岛</a></li>
+                <li class="city"><a href="javascript:;">成都</a></li>
+                <li class="city"><a href="javascript:;">海南</a></li>
+                <li class="city"><a href="javascript:;">西安</a></li>
             </ul>
         </div>
         <div class="tools_login"></div>
@@ -55,12 +48,12 @@
             <li><a href="https://www.baidu.com/">小说投稿</a></li>
             <li><a href="https://www.baidu.com/">我要出书</a></li>
             <li><a href="https://www.baidu.com/">企业采购</a></li>
-            <li><a href="https://www.baidu.com/">客户服</a>务</li>
+            <li><a href="https://www.baidu.com/">客户服务</a></li>
         </ul>
     </div>
-  <div class="header_nav">
+    <div class="header_nav">
       <div class="logo">
-          <img src="images/logo.png" alt="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
       </div>
       <div class="searchBox">
           <div class="box">
@@ -80,18 +73,34 @@
           </div>
       </div>
       <div class="cart_oder">
-          <div class="shoppingCart">
-              <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-iconset0308"></use>
-              </svg>
-              <a href="https://www.baidu.com/" class="">购物车</a>
-          </div>
-          <div class="order"><a href="https://www.baidu.com/" class="">我的订单</a></div>
+             <div class="shoppingCart">
+                 <svg class="icon" aria-hidden="true">
+                     <use xlink:href="#icon-iconset0308"></use>
+                 </svg>
+                 <a href="shopping-cart.html" class="">购物车</a>
+             </div>
+             <div class="order"><a href="my-order.html" class="">我的订单</a></div>
       </div>
   </div>
+    <div class="bookClassify">
+        <ul class="book-type-options">
+            <li class="all"><a href="#" id="a_category" name="cate" class="sort_button" >全部分类</a></li>
+            <li><a name="bookType" href="#" target="_blank">电子书</a></li>
+            <li><a name="bookType" href="#" target="_blank">文学</a></li>
+            <li><a name="bookType" href="#" target="_blank">科技</a></li>
+            <li><a name="bookType" href="#" target="_blank">历史</a></li>
+            <li><a name="bookType" href="#" target="_blank">童书<a></li>
+            <li><a name="bookType" href="#" target="_blank">孕婴童</a></li>
+            <li><a name="bookType" href="# " target="_blank">家居</a></li>
+            <li><a name="bookType" href="#" target="_blank">拍卖</a></li>
+            <li><a name="bookType" href="#" target="_blank">食品</a></li>
+            <li><a name="bookType" href="#" target="_blank">Apple</a></li>
+            <li><a name="bookType" href="# " target="_blank">电器城</a></li>
+        </ul>
+    </div>
 </div>
 
-<script src="js/default.js"></script>
+
 
 </body>
 </html>
