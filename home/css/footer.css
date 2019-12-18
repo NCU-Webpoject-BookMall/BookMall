@@ -8,14 +8,14 @@ a{
     text-decoration: none;
     color: #1b1e21;
 }
-body{
+/*body{
     position: absolute;
     overflow: hidden;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-}
+}*/
 /*第一栏：正品保障等*/
 .footer_pic_new_inner{
     width: 1280px;
