@@ -19,6 +19,7 @@ a{
 /*第一栏：正品保障等*/
 .footer_pic_new_inner{
     width: 1280px;
+   /* width: 100%;*/
     height: 75px;
     overflow: hidden;
     text-align: center;
@@ -47,6 +48,7 @@ a{
 /*第2栏 购物指南等*/
 .public_footer_new{
     width: 1280px;
+   /* width: 100%;*/
     height: 150px;
     text-align: center;
     overflow: hidden;
@@ -73,6 +75,7 @@ a{
 /*第三栏*/
 .footer_nav_box{
     width: 1280px;
+  /*  width: 100%;*/
     height: 150px;
     text-align: center;
 
