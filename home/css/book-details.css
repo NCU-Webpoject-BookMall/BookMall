@@ -1,0 +1,14 @@
+/*图片展示区*/
+.large_image{
+    width: 500px;
+    align-content: center;
+}
+.large_image_pic{
+    width: 500px;
+    height: 400px;
+    align-content: center;
+}
+#BigImg{
+    width: 500px;
+    height: 400px;
+}
