@@ -8,7 +8,7 @@ window.onload=function () {
     };
     area.onmouseleave=function () {
         areaList.classList.remove("currentShow");
-    }
+    };
 
     /*点击某个城市*/
     var city=Array.from(areaList.getElementsByTagName("li"));
@@ -20,5 +20,10 @@ window.onload=function () {
             //console.log(cityFont);
         }
     });
-
+    /*屏幕物理分辨率的宽： window.screen.width*/
+    var setWidth=document.getElementsByClassName("screen-width");
+    for (let i=0;i<setWidth.length;i++){
+        let width=window.screen.width-75;
+        setWidth[i].style.width=width+"px";
+    }
 };
