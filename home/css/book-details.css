@@ -25,7 +25,7 @@
 /*标题区*/
 .name_info {
     position: absolute;
-    left: 640px;
+    left: 575px;
     top:210px;
     width: 700px;
     height: 450px;
@@ -33,7 +33,7 @@
 /*价格区*/
 .price_pc{
     margin-top: 20px;
-    width: 300px;
+    width: 410px;
     height: 70px;
     background-color: #9fcdff;
 }

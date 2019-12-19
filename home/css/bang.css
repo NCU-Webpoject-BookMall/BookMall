@@ -1,0 +1,91 @@
+.bang_index_list{
+    padding-left:50px;
+    width: 1180px;
+    height: 500px;
+}
+
+.bang_index_list_head{
+    width: 1180px;
+    height: 40px;
+
+    display: flex;
+    overflow: hidden;
+    border-top: #69bbd3 3px solid;
+
+}
+.bang_index_list_title{
+    font-size: 20px;
+    color: #69bbd3;
+    width: 125px;
+    height: 40px;
+
+}
+
+.bang_index_list_tab{
+
+    width: 980px;
+    height: 40px;
+
+    margin-left: 30px;
+    display: flex;
+    overflow: hidden;
+    align-content: center;
+}
+
+.bang_index_list_tab_big{
+
+    list-style: none;
+    margin-left: 10px;
+    color: #323232;
+    font-size: 15px;
+    font-family: 黑体, serif;
+    font-weight:bolder;
+    width: 110px;
+    height: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+
+
+}
+.bang_index_list_tab_small{
+    list-style: none;
+    margin-left: 10px;
+    color: #323232;
+    font-size: 15px;
+    font-family: 黑体, serif;
+    font-weight:bolder;
+    width: 50px;
+    height: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.bang_index_list_tab li a:hover{
+    color:#69bbd3;
+}
+
+.bang_index_list_body{
+    margin-top: 20px;
+    width: 1180px;
+    height: 350px;
+font-size: 80%;
+}
+.bang_index_list_rate{
+    width: 1180px;
+    height: 350px;
+
+    display: flex;
+    overflow: hidden;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.bang_index_list_rate li{
+    width: 200px;
+    height: 350px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
