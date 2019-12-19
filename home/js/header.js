@@ -8,7 +8,7 @@ window.onload=function () {
     };
     area.onmouseleave=function () {
         areaList.classList.remove("currentShow");
-    }
+    };
 
     /*点击某个城市*/
     var city=Array.from(areaList.getElementsByTagName("li"));
