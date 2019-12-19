@@ -20,5 +20,10 @@ window.onload=function () {
             //console.log(cityFont);
         }
     });
-
+    /*屏幕物理分辨率的宽： window.screen.width*/
+    var setWidth=document.getElementsByClassName("screen-width");
+    for (let i=0;i<setWidth.length;i++){
+        let width=window.screen.width-75;
+        setWidth[i].style.width=width+"px";
+    }
 };
