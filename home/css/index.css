@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+.bd1{
+   /* display: flex;*/
+   /* text-align: center;*/
+    margin: 0;
+    padding: 0;
+}
+.bd1_left{
+    display: inline-block;
+    margin: 10px 5px 5px 30px;
+    width: 190px;
+    height: 500px;
+    border: #487A6F solid 1px;
+}
+.bd1_middle{
+    display: inline-block;
+    margin: 10px 5px 5px 5px;
+    width: 750px;
+    height: 500px;
+    border: #487A6F solid 1px;
+}
+.bd1_right{
+    display: inline-block;
+    margin: 10px 5px 5px 5px;
+    width: 240px;
+    height: 500px;
+    border: #487A6F solid 1px;
+}

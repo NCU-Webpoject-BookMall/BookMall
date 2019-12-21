@@ -34,8 +34,10 @@ body{
 }
 /*头部工具条*/
 .header .tools{
+    padding: 0;
+    margin: 0;
     background-color:#f9f9f9;
-    width: 1280px;
+  /*  width: 1250px;*/
     height: 45px;
     overflow: hidden;
     display: flex;
@@ -69,7 +71,7 @@ body{
 }
 /*tools右部工具栏*/
 .tools .tools_operate{
-    margin-left: 700px;
+    margin-left: 650px;
     overflow: hidden;
     height: 20px;
 }
@@ -189,7 +191,7 @@ a{
     padding-left: 50px;
     margin-top: 0px;
     display: flex;
-    width: 1280px;
+    /*width: 1200px;*/
     height: 40px;
     overflow: hidden;
     border-bottom: #69bbd3 3px solid;
