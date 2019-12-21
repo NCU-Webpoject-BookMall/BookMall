@@ -1,0 +1,43 @@
+.top{
+    height: 40px;
+}
+.top .top_operate{
+    overflow: hidden;
+    margin-left: 15px;
+    font-family: 黑体, serif;
+}
+.top .top_operate li{
+     display: inline-block;
+     border-left: #17a2b8 1px solid;
+     padding-left: 8px;
+     font-size: 16px;
+     font-weight: bold;
+ }
+.top .top_operate a:hover{
+    color: #17a2b8;
+}
+#h{
+    border-left: none;
+    font-size: 30px;
+    color: #17a2b8;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.classify{
+    border-top: #17a2b8 1px solid;
+    width: 800px;
+    padding-left: 60px;
+}
+.classify .left{
+    margin-top: auto;
+    width: 140px;
+    border-left: #95999c 1px solid;
+}
+.classify .left .allStage{
+    margin-left: 10px;
+}
+.classify .left .allStage a{
+    color: #95999c;
+}
+
+

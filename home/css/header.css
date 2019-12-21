@@ -1,0 +1,242 @@
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+/* 点击搜索框获取焦点 placeholder消失-开始 */
+/* WebKit browsers */
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+    /* transparent是全透明黑色(black)的速记法，即一个类似rgba(0,0,0,0)这样的值 */
+}
+/* Mozilla Firefox 4 to 18 */
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+/* Mozilla Firefox 19+ */
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+/* Internet Explorer 10+ */
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+/* 点击搜索框获取焦点 placeholder消失-结束 */
+
+body{
+    font-family: SimSun-ExtB,Arial, serif;
+}
+/*让logo,搜索框,和购物车-我的订单模块显示在同一行*/
+.header_nav{
+    display: flex;
+    margin-top: -10px;
+}
+/*头部工具条*/
+.header .tools{
+    padding: 0;
+    margin: 0;
+    background-color:#f9f9f9;
+  /*  width: 1250px;*/
+    height: 45px;
+    overflow: hidden;
+    display: flex;
+}
+/*tools左部工具栏：配送地区*/
+.tools_area{
+    position: absolute;
+    top: 23px;
+  /*  line-height: 45px;*/
+    font-size: 13px;
+}
+.icon_xiala{
+    position: absolute;
+    left: 100px;
+    top: -10px;
+}
+.areaList{
+    width: 200px;
+    height: 130px;
+    background-color: white;
+    padding-left: 0;
+    display: none;
+}
+.areaLisCurrent{
+    display: block;
+}
+.areaList li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 10px 0 5px;
+}
+/*tools右部工具栏*/
+.tools .tools_operate{
+    margin-left: 650px;
+    overflow: hidden;
+    height: 20px;
+}
+.tools .tools_operate li{
+    display: inline-block;
+    border-left: #5a6268 1px solid;
+    padding-left: 8px;
+    font-size: 13px;
+}
+#login,#toBeMembership{
+    border-left: none;
+    padding-left: 0;
+}
+#login a{
+    color: red;
+ }
+/*logog,搜索框模块，购物车—我的订单模块*/
+.logo,.searchBox,.cart_oder{
+    margin-top: 10px;
+}
+/*搜索框模块*/
+.searchBox{
+    display: flex;
+    margin-left: 80px;
+}
+.searchBox div{
+    margin-top: 20px;
+}
+/*搜索框*/
+.box{
+    width: 450px;
+    height: 40px;
+    border: 2px solid #69bbd3;
+    border-right: none;
+    color: #323232;/*搜索框中的文字颜色*/
+    position: relative;
+}
+.classification{
+    line-height: 40px;
+    color: gray;
+}
+.textArea{
+    height: 38px;
+    width: 350px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+/*图书分类span*/
+.classification{
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+}
+/*icon图标*/
+.cla_icon{
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+/*搜索按钮图标*/
+.searchBt{
+    position: relative;
+    width: 50px;
+    height: 40px;
+    border: 2px solid #69bbd3;
+    background-color: #69bbd3;
+}
+.searchBt_icon{
+    position: absolute;
+    width: 30px!important;
+    height: 30px!important;
+    top: 5px;
+    right: 5px;
+    color: #ececec;
+}
+/*购物车-我的订单模块*/
+.cart_oder{
+    margin-top: 0;
+    margin-left: 40px;
+    display: flex;
+}
+.cart_oder div{
+    display: inline-block;
+    margin-top: 30px;
+}
+.shoppingCart,.order{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #69bbd3;
+    font-size: 20px;
+    line-height: 40px;
+}
+.shoppingCart{
+    background-color: #abdde5;
+    border-right: none;
+}
+.shoppingCart a{
+    color: white;
+}
+.order{
+    width: 90px;
+}
+a{
+    text-decoration: none;
+    color: #646464;;
+}
+.currentShow{
+    display: block;
+}
+.currentNotShow{
+    display: none;
+}
+/*导航栏-图书分类*/
+.book-type-options{
+    padding-left: 50px;
+    margin-top: 0px;
+    display: flex;
+    /*width: 1200px;*/
+    height: 40px;
+    overflow: hidden;
+    border-bottom: #69bbd3 3px solid;
+}
+.book-type-options li{
+    list-style: none;
+    margin-left: 10px;
+    color: #323232;
+    font-size: 17px;
+    font-family: 黑体, serif;
+    font-weight:bolder;
+    width: 60px;
+    height: 20px;
+   margin-top: 10px;
+    overflow: hidden;
+}
+.book-type-options li a:hover{
+    color:#69bbd3;
+}
+.book-type-options .all{
+    margin-top: 0;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+  /*  line-height: 30px;*/
+    font-size: 18px;
+    background-color: #abdde5;
+}
+.book-type-options .all a{
+    line-height: 40px;
+    color: #fafafa;
+}
+/*右展菜单图标*/
+.right-icon{
+    position: absolute;
+    top: 145px;
+    left: 225px;
+    color: #fafafa;
+}
+/**/
+/*body{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}*/
