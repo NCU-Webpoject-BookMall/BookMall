@@ -7,7 +7,7 @@
 .bang_index_list_head{
     width: 1180px;
     height: 40px;
-
+    margin-top:0px;
     display: flex;
     overflow: hidden;
     border-top: #69bbd3 3px solid;
@@ -18,14 +18,14 @@
     color: #69bbd3;
     width: 125px;
     height: 40px;
-
+    margin-top:0px;
 }
 
 .bang_index_list_tab{
 
     width: 980px;
     height: 40px;
-
+    margin-top:0px;
     margin-left: 30px;
     display: flex;
     overflow: hidden;
@@ -72,7 +72,7 @@ font-size: 80%;
 .bang_index_list_rate{
     width: 1180px;
     height: 350px;
-
+    margin-top:0px;
     display: flex;
     overflow: hidden;
     font-family: sans-serif;
