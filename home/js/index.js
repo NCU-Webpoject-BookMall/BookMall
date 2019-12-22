@@ -4,12 +4,14 @@ window.onload=function () {
     lun_bo_tu();
     /*新书上架-分页*/
     newBook_changePages();
+    /*热销榜*/
+    hot_sale();
    /*左边栏 鼠标移入移出*/
     var left_side=document.getElementsByClassName("left-book-type");
     var type_one_list=document.getElementsByClassName("type-one-list");
-    console.log(type_one_list);
+    //console.log(type_one_list);
     var menu_list=document.getElementsByClassName("menu-list")[0];
-    console.log(left_side.length);
+    //console.log(left_side.length);
     for (let i=0;i<left_side.length;i++){
         left_side[i].onmouseout=function () {
              left_side[i].classList.remove("current-mouseenter");
@@ -29,7 +31,7 @@ window.onload=function () {
     menu_list.onmouseout=function () {
         menu_list.classList.remove("current-show");
     };
-    console.log(type_one_list.length);
+    //console.log(type_one_list.length);
     for (let i=0;i<type_one_list.length;i++){
         type_one_list[i].onmouseover=function () {
             type_one_list[i].classList.add("current-show");
@@ -40,6 +42,27 @@ window.onload=function () {
     }
 
 };
+/*热销榜*/
+function hot_sale() {
+    var hot_sale_bang=document.getElementsByClassName("hot-sale-bang-01");
+    var books_in_bang=document.getElementsByClassName("books-in-bang");
+    books_in_bang[0].classList.add("current-show");
+    /*鼠标移入移出或点击榜单导航栏事件*/
+    for (let i=0;i<hot_sale_bang.length;i++){
+        hot_sale_bang[i].addEventListener("mouseover",function () {
+           // console.log(hot_sale_bang[i].style.width);
+            /*先清除其他榜单的“当前显示”样式*/
+            for (let i=0;i<hot_sale_bang.length;i++){
+                hot_sale_bang[i].classList.remove("current-show-bang");
+                books_in_bang[i].classList.remove("current-show");
+            }
+            hot_sale_bang[i].classList.add("current-show-bang");
+            books_in_bang[i].classList.add("current-show");
+        },false);
+    }
+
+
+}
 /*新书上架-分页*/
 function newBook_changePages() {
     //小圆点

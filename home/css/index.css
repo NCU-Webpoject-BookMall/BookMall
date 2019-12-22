@@ -487,6 +487,12 @@ a:hover{
     border-bottom: 1px solid #d8d8d8;
     border-right: 1px solid #d8d8d8;
 }
+/*鼠标移入移出决定当前显示的榜单*/
+.current-show-bang{
+    border-bottom: none;
+    color: #487a6f;
+    border-top:  #487a6f 2px solid;
+}
 .hot-sale-bang-01 a{
     font-weight: bolder;
     font-size: 13px;
@@ -495,6 +501,7 @@ a:hover{
 /*榜单上具体的书单*/
 .books-in-bang{
     padding:0;
+    display: none;
 }
 .books-in-bang li{
     list-style: none;
