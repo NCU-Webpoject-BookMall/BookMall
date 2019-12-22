@@ -45,13 +45,14 @@ body{
 /*tools左部工具栏：配送地区*/
 .tools_area{
     position: absolute;
-    top: 23px;
+    left: 0;
+    top: 15px;
   /*  line-height: 45px;*/
     font-size: 13px;
 }
 .icon_xiala{
     position: absolute;
-    left: 100px;
+    left: 0px;
     top: -10px;
 }
 .areaList{
@@ -71,9 +72,13 @@ body{
 }
 /*tools右部工具栏*/
 .tools .tools_operate{
-    margin-left: 650px;
-    overflow: hidden;
+   /* position: absolute;*/
+    padding: 0;
+    margin-left: 680px;
+    margin-top: 15px;
+    width: 1000px;
     height: 20px;
+    overflow: hidden;
 }
 .tools .tools_operate li{
     display: inline-block;
@@ -176,7 +181,7 @@ body{
 .order{
     width: 90px;
 }
-a{
+.header a{
     text-decoration: none;
     color: #646464;;
 }
@@ -188,8 +193,9 @@ a{
 }
 /*导航栏-图书分类*/
 .book-type-options{
-    padding-left: 50px;
-    margin-top: 0px;
+    font-family: "Microsoft Yahei", serif;
+    padding-left: 0px;
+   margin-left: 0;
     display: flex;
     /*width: 1200px;*/
     height: 40px;
@@ -205,18 +211,20 @@ a{
     font-weight:bolder;
     width: 60px;
     height: 20px;
-   margin-top: 10px;
+    margin-top: 10px;
     overflow: hidden;
 }
 .book-type-options li a:hover{
     color:#69bbd3;
 }
 .book-type-options .all{
+    margin-left: 30px;
     margin-top: 0;
     text-align: center;
     width: 200px;
     height: 40px;
   /*  line-height: 30px;*/
+    overflow: hidden;
     font-size: 18px;
     background-color: #abdde5;
 }
@@ -227,8 +235,8 @@ a{
 /*右展菜单图标*/
 .right-icon{
     position: absolute;
-    top: 145px;
-    left: 225px;
+    top: 155px;
+    left: 190px;
     color: #fafafa;
 }
 /**/

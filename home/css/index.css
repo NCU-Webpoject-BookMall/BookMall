@@ -1,30 +1,412 @@
 body{
     text-align: center;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
 }
 .bd1{
-   /* display: flex;*/
-   /* text-align: center;*/
-    margin: 0;
-    padding: 0;
+    display: flex;
+    text-align: center;
 }
+/*左边栏*/
 .bd1_left{
-    display: inline-block;
-    margin: 10px 5px 5px 30px;
-    width: 190px;
-    height: 500px;
-    border: #487A6F solid 1px;
+    margin-left: 30px;
 }
-.bd1_middle{
-    display: inline-block;
-    margin: 10px 5px 5px 5px;
-    width: 750px;
-    height: 500px;
-    border: #487A6F solid 1px;
+.left-side-menu{
+  /*  border: 1px #849555 solid;*/
+    border-radius: 6px 6px 4px 4px;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 960px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 15px;
+    color: #487a6f;
+    font-weight: bold;
 }
-.bd1_right{
-    display: inline-block;
-    margin: 10px 5px 5px 5px;
-    width: 240px;
-    height: 500px;
-    border: #487A6F solid 1px;
+/*“图书分类”标题*/
+.left-side-head{
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    background: #487a6f;
+    border-radius: 4px 4px 0 0;
+    color: white;
+}
+/*每一行*/
+.left-book-type{
+    border-left: 1px #487a6f solid;
+    border-right: 1px #487a6f solid;
+    border-top: 1px dotted #487a6f ;
+    height: 35px;
+    line-height: 35px;
+    font-family: "Microsoft Yahei", serif;
+}
+/*鼠标移入每一行，特殊显示*/
+.current-mouseenter{
+    background-color: #c6d8e5;
+    border-right: none;
+    border-left: none;
+}
+/*右拉图标*/
+.youla-icon-01{
+    position: absolute;
+    top: 250px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-02{
+    position: absolute;
+    top: 285px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-03{
+    position: absolute;
+    top: 320px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-04{
+    position: absolute;
+    top: 410px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-05{
+    position: absolute;
+    top: 445px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-06{
+    position: absolute;
+    top: 515px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-07{
+    position: absolute;
+    top: 550px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-08{
+    position: absolute;
+    top: 635px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-09{
+    position: absolute;
+    top: 745px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-10{
+    position: absolute;
+    top: 810px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-11{
+    position: absolute;
+    top: 927px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-12{
+    position: absolute;
+    top: 1020px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-13{
+    position: absolute;
+    top: 1055px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-14{
+    position: absolute;
+    top: 1093px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+.youla-icon-15{
+    position: absolute;
+    top: 1128px;
+    left: 208px;
+    color: #487a6f;
+    opacity: 0.5;
+}
+/*“教育”栏*/
+.type-three{
+    height: 90px;
+}
+.type-detail{
+    font-size: 13px;
+    line-height: 25px;
+    font-family: SimSun-ExtB,Arial, serif;
+}
+.type-detail a{
+    text-decoration: none;
+    color: #9a9a9a;
+}
+/*垂直小分割线*/
+.type-detail .hr01{
+    margin:0 -3px;
+}
+.type-detail a:hover{
+    color: orange;
+}
+.type-detail .current-highlight{
+    color: red;
+}
+/*文艺栏*/
+.type-five{
+    height: 65px;
+}
+/*童书栏*/
+.type-seven{
+    height: 85px;
+}
+.type-eight{
+    height: 110px;
+}
+.type-09{
+    height: 65px;
+}
+/*生活栏*/
+.type-10{
+    height: 115px;
+}
+/*科技栏*/
+.type-11{
+    height: 90px;
+}
+.type-15{
+    border-bottom: 1px #487a6f solid;
+    border-radius: 0 0 5px 5px;
+}
+/*右拉菜单*/
+.menu-list{
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    top: 237px;
+    left: 230px;
+    width: 600px;
+    height: 900px;
+    overflow: hidden;
+    border-bottom: 1px #487a6f solid;
+    border-top: 1px #487a6f solid;
+    border-right: 1px #487a6f solid;
+    display: none;
+}
+/*每一栏的右拉菜单*/
+.type-list{
+    display: flex;
+    padding: 10px 0;
+    margin: 0 10px ;
+    border-bottom: 1px dotted gray;
+}
+.type-list-title{
+    width: 100px;
+    text-align: center;
+    padding: 15px 0 0 20px;
+    margin: 0 20px 0 0;
+    font-size: 14px;
+    color: #487a6f;
+    font-weight: bolder;
+    font-family: "Microsoft Yahei", serif;
+}
+.type-list-options{
+    width: 530px;
+    margin-top: 10px;
+    text-align: left;
+    padding-right: 50px;
+}
+.current-show{
+    display: block!important;
+}
+.type-one-list{
+    display: none;
+}
+
+/*轮播图效果*/
+.lun-bo-tu #box{
+    width: 790px;
+    height: 340px;
+    margin: 0 auto;
+    position: relative;
+}
+.lun-bo-tu .btn{
+    width: 50px;
+    height: 100px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    top: 120px;
+    display: none;
+}
+
+.lun-bo-tu #left{
+    left: 0px;
+}
+.lun-bo-tu #right{
+    right: 0px;
+}
+.lun-bo-tu ul {
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    left: 230px;
+}
+.lun-bo-tu ul li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: #aaa;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+.lun-bo-tu ul li a{
+    color: #487a6f;
+}
+/*新书上架 栏*/
+.new-book-list{
+    text-align: center;
+}
+/*icon图标*/
+.icon-new{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 250px;
+    top:530px
+}
+/*顶端分割线*/
+.list-hr{
+    width: 695px;
+    height: 40px;
+    text-align: left;
+    margin-left: 75px;
+
+    border-bottom: #487a6f 1px solid;
+}
+.list-hr span{
+    font-size: 20px;
+    color: #487a6f;
+   /* margin-left: 75px;*/
+    font-family: "Microsoft Yahei", serif;
+}
+/*书架区*/
+.new-books{
+
+}
+.new-books-ul{
+    margin-top: 30px;
+    display: flex;
+}
+.new-books-ul li{
+    text-align: left;
+    list-style: none;
+    margin-right: 40px;
+}
+/*一本书*/
+.new-book{
+    width: 150px;
+    height: 220px;
+}
+.new-book p{
+    margin:5px -5px 3px 20px;
+}
+/*书名*/
+.book-name a{
+    font-size: 15px;
+    color: #1b1e21;
+}
+/*作者名*/
+.book-author{
+    font-size: 13px;
+    color: #9a9a9a;
+}
+/*价格*/
+.book-price{
+    font-size: 18px;
+    color: red;
+}
+/*分页*/
+.books-page{
+    display: none;
+}
+/*可点击的分页图标*/
+.change-page{
+    display: flex;
+    text-align: center;
+    width: 120px;
+    padding-left: 300px;
+    margin-top: 30px;
+}
+.change-page-dot{
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: #487a6f;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+.change-page-dot a{
+    color: white;
+}
+/*右边栏*/
+/*最新动态*/
+.book_new_state{
+    width: 220px;
+    height: 120px;
+    font-family: "Microsoft Yahei", serif;
+    text-align: left;
+    border: 1px solid #d8d8d8;
+}
+.book_new_state h3{
+    padding-left: 12px;
+    margin: 10px 0 5px 0;
+}
+.book_new_state-list{
+    padding-left: 15px;
+}
+.stete-detail{
+    list-style: none;
+}
+.stete-detail a{
+    color: #1b1e21;
+    font-size: 12px;
+}
+.stete-detail a:hover{
+    color: orange;
 }

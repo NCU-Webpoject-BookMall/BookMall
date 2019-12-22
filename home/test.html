@@ -1,44 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>js改变div的宽度和高度</title>
-    <style>
-        #mydiv{
-            width: 200px;
-            height: 200px;
-            background-color: pink;
-        }
-    </style>
-    <script>
-        window.onload = function () {
-            //拿到div
-            var div = document.getElementById("mydiv");
-            //拿到两个按钮
-            var btns = document.getElementsByTagName("input");
-
-            btns[0].onclick = function () {
-                //拿到div显示出来的宽度
-                //alert(getStyle(div,"width"));
-                //alert(parseInt(getStyle(div,"width")) + 20);
-                //改变宽度
-                div.style.width = parseInt(getStyle(div,"width")) + 20 + "px";
-            }
-            btns[1].onclick = function () {
-                //改变高度
-                div.style.height = parseInt(getStyle(div, "height")) + 20 + "px";
-            }
-        }
-
-        //获取style样式的css属性,考虑兼容;ie,火狐/谷歌;
-        function getStyle(parm1,parm2) {
-            return parm1.currentStyle ? parm1.currentStyle[parm2] : getComputedStyle(parm1)[parm2];  //parm1,要改变的元素代替名;parm2,要改变的属性名
-        }
-    </script>
+    <meta charset="utf-8" />
+    <title>轮播</title>
+    <link rel="stylesheet" href="css/test.css" />
+    <script type="text/javascript" src="js/test.js" ></script>
 </head>
 <body>
-<div id="mydiv"></div>
-<input type="button" value="改变宽度"/>
-<input type="button" value="改变高度"/>
+<div class="lun-bo-tu">
+    <div id="box">
+        <img id="pic" src="images/index/lun-bo-tu-01.jpg" />
+        <ul id="list">
+            <li><a href="javascript:;">1</a></li>
+            <li><a href="javascript:;">2</a></li>
+            <li><a href="javascript:;">3</a></li>
+            <li><a href="javascript:;">4</a></li>
+            <li><a href="javascript:;">5</a></li>
+            <li><a href="javascript:;">6</a></li>
+            <li><a href="javascript:;">7</a></li>
+            <li><a href="javascript:;">8</a></li>
+        </ul>
+        <div class="btn" id="left"> &lt;</div><!--小于号图标-->
+        <div class="btn" id="right">&gt;</div><!--大于号图标-->
+    </div>
+</div>
 </body>
 </html>

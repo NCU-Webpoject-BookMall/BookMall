@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.lun-bo-tu #box{
+    width: 790px;
+    height: 340px;
+    margin: 0 auto;
+    position: relative;
+}
+.lun-bo-tu .btn{
+    width: 50px;
+    height: 100px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    top: 120px;
+    display: none;
+}
+
+.lun-bo-tu #left{
+    left: 0px;
+}
+.lun-bo-tu #right{
+    right: 0px;
+}
+.lun-bo-tu ul {
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    left: 230px;
+}
+.lun-bo-tu ul li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: #aaa;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
