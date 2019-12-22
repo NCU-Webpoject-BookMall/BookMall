@@ -6,6 +6,9 @@ body{
 a{
     text-decoration: none;
 }
+a:hover{
+    color: orange;
+}
 .bd1{
     display: flex;
     text-align: center;
@@ -258,6 +261,12 @@ a{
     margin: 0 auto;
     position: relative;
 }
+.lun-bo-tu #box1{
+    width: 790px;
+    height: 340px;
+    margin: 0 auto;
+    position: relative;
+}
 .lun-bo-tu .btn{
     width: 50px;
     height: 100px;
@@ -274,7 +283,13 @@ a{
 .lun-bo-tu #left{
     left: 0px;
 }
+.lun-bo-tu #left1{
+    left: 0px;
+}
 .lun-bo-tu #right{
+    right: 0px;
+}
+.lun-bo-tu #right1{
     right: 0px;
 }
 .lun-bo-tu ul {
@@ -393,20 +408,114 @@ a{
     text-align: left;
     border: 1px solid #d8d8d8;
 }
-.book_new_state h3{
+.book_new_state h4{
     padding-left: 12px;
     margin: 10px 0 5px 0;
 }
 .book_new_state-list{
     padding-left: 15px;
 }
-.stete-detail{
+.state-detail{
     list-style: none;
 }
-.stete-detail a{
+.state-detail a{
     color: #1b1e21;
     font-size: 12px;
 }
-.stete-detail a:hover{
+.state-detail a:hover{
     color: orange;
+}
+/*新书预售*/
+.new-book-for-sale{
+    margin-top: 15px;
+    width: 220px;
+    height: 180px;
+    font-family: "Microsoft Yahei", serif;
+    text-align: left;
+    border: 1px solid #d8d8d8;
+}
+.new-book-for-sale h4{
+    padding-left: 12px;
+    margin: 10px 0 5px 0;
+}
+.book-form{
+    display: flex;
+}
+.book-form a{
+    font-size: 12px;
+    color: #1b1e21;
+}
+.book-form a .p01{
+    font-size: 15px;
+    color: red;
+}
+.book-form a .p02{
+    font-size: 15px;
+    color: #9d9d9d;
+}
+/*热销榜*/
+/*icon图标*/
+.hot-sale-bang-icon{
+    width: 30px;
+    height: 30px;
+}
+.hot-sale-bang-title{
+    margin-top: 28px;
+    font-family: "Microsoft Yahei", serif;
+    font-weight: bolder;
+    font-size: 17px;
+    text-align: left;
+}
+.hot-sale-bang{
+   /* margin-top: 60px;*/
+    width: 220px;
+    height: 550px;
+    font-family: "Microsoft Yahei", serif;
+    text-align: left;
+    border: 1px solid #d8d8d8;
+}
+/*榜单分类*/
+.hot-sale-bang-nav{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.hot-sale-bang-01{
+    width: 20%;
+    list-style: none;
+    border-bottom: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+.hot-sale-bang-01 a{
+    font-weight: bolder;
+    font-size: 13px;
+    color: #7a7a7a;
+}
+/*榜单上具体的书单*/
+.books-in-bang{
+    padding:0;
+}
+.books-in-bang li{
+    list-style: none;
+    display: flex;
+    width: 210px;
+    height: 35px;
+    overflow: hidden;
+    border-bottom: 1px solid #d8d8d8;
+}
+.books-in-bang li h5{
+    margin: 7px 10px;
+}
+.books-in-bang li a{
+    font-size: 12px;
+    line-height: 30px;
+    color: #7a7a7a;
+}
+.books-in-bang li a:hover{
+    color: orange;
+}
+/*前三名高亮*/
+.between-03 h5{
+    color: red;
 }
