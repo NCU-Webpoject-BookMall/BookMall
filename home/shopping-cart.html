@@ -70,7 +70,7 @@
     </div><!--配送地区-->
     <div class="content-middle">
         <div class="all-select title">
-            <input type="checkbox" id="all-select-input">
+            <input type="checkbox" id="all-select-input" class="select-book">
             <label for="all-select-input">全选</label>
             <div class="books-info">
                 商品信息
@@ -89,15 +89,15 @@
             </div>
         </div>
         <div class="all-select shop-name">
-            <input type="checkbox" id="all-select-input01">
-            <label for="all-select-input">自营书店</label>
+            <input type="checkbox" id="all-select-input01" class="select-book">
+            <label for="all-select-input01">自营书店</label>
         </div>
         <div class="books-in-shop">
             <table class="book-infos-list" width="100%" border="0" cellspacing="0" cellpadding="0">
                 <!--每一本书-->
                 <tr class="a-book">
                     <td class="all-select select-to-buy">
-                        <input type="checkbox">
+                        <input type="checkbox" class="select-book select-one-book">
                     </td><!--1、复选框-->
                     <td class="book-img" colspan="3">
                         <img src="images/shopping_cart/时间真好玩.jpg" alt="">
@@ -105,25 +105,25 @@
                     <td class="book-description" colspan="4">
                         <p>时间真好玩（全彩6册）（ 培养时间观念、学会认时钟、进行时间管理、 开发数学思维，幼儿启蒙必备）</p>
                     </td><!--3、书本的简介-->
-                    <td class="sigle-price" >
-                        <p>￥36.00</p>
+                    <td class="single-price" >
+                        ￥36.00
                     </td><!--4、书本的单价-->
                     <td class="book-num-to-buy">
-                        <p><input type="number" min="1" placeholder="1"></p>
+                        <input type="number" min="1" placeholder="1"class="input-num" value="1">
                     </td><!--5、数量-->
                     <td class="book-sum-price">
-                        <p>￥36.00</p>
+                        ￥36.00
                     </td><!--6、总价-->
                     <td class="operate-options" colspan="2" >
                         <ul>
-                            <li><a href="javascript:;">移入收藏夹</a></li>
-                            <li><a href="javascript:;">删除</a></li>
+                            <li><a href="javascript:;" class="op">移入收藏夹</a></li>
+                            <li><a href="javascript:;" class="op">删除</a></li>
                         </ul>
                     </td><!--7、删除或移入收藏夹-->
                 </tr>
                 <tr class="a-book">
                     <td class="all-select select-to-buy">
-                        <input type="checkbox">
+                        <input type="checkbox" class="select-book select-one-book">
                     </td><!--1、复选框-->
                     <td class="book-img" colspan="3">
                         <img src="images/shopping_cart/妈妈快来陪我玩.jpg" alt="">
@@ -131,19 +131,97 @@
                     <td class="book-description" colspan="4">
                         <p>妈妈快来陪我玩：全4册</p>
                     </td><!--3、书本的简介-->
-                    <td class="sigle-price" >
-                        <p>￥58.00</p>
+                    <td class="single-price" >
+                        ￥58.00
                     </td><!--4、书本的单价-->
                     <td class="book-num-to-buy">
-                        <p><input type="number" min="1" placeholder="1"></p>
+                        <input type="number" min="1" placeholder="1" class="input-num" value="1">
                     </td><!--5、数量-->
                     <td class="book-sum-price">
-                        <p>￥58.00</p>
+                        ￥58.00
                     </td><!--6、总价-->
                     <td class="operate-options" colspan="2" >
                         <ul>
-                            <li><a href="javascript:;">移入收藏夹</a></li>
-                            <li><a href="javascript:;">删除</a></li>
+                            <li><a href="javascript:;" class="op">移入收藏夹</a></li>
+                            <li><a href="javascript:;" class="op">删除</a></li>
+                        </ul>
+                    </td><!--7、删除或移入收藏夹-->
+                </tr>
+                <tr class="a-book">
+                    <td class="all-select select-to-buy">
+                        <input type="checkbox" class="select-book select-one-book">
+                    </td><!--1、复选框-->
+                    <td class="book-img" colspan="3">
+                        <img src="images/shopping_cart/岁月如刀我来领教.jpg" alt="">
+                    </td><!--2、书本图片-->
+                    <td class="book-description" colspan="4">
+                        <p>岁月如刀 我来领教（苏芩作品。岁月残酷，而我们天生傲骨，怎能服输！）</p>
+                    </td><!--3、书本的简介-->
+                    <td class="single-price" >
+                        ￥35.80
+                    </td><!--4、书本的单价-->
+                    <td class="book-num-to-buy">
+                        <input type="number" min="1" placeholder="1" class="input-num" value="1">
+                    </td><!--5、数量-->
+                    <td class="book-sum-price">
+                        ￥35.80
+                    </td><!--6、总价-->
+                    <td class="operate-options" colspan="2" >
+                        <ul>
+                            <li><a href="javascript:;" class="op">移入收藏夹</a></li>
+                            <li><a href="javascript:;" class="op">删除</a></li>
+                        </ul>
+                    </td><!--7、删除或移入收藏夹-->
+                </tr>
+                <tr class="a-book">
+                    <td class="all-select select-to-buy">
+                        <input type="checkbox" class="select-book select-one-book">
+                    </td><!--1、复选框-->
+                    <td class="book-img" colspan="3">
+                        <img src="images/shopping_cart/美人为馅.jpg" alt="">
+                    </td><!--2、书本图片-->
+                    <td class="book-description" colspan="4">
+                        <p>美人为馅套装（全两册））</p>
+                    </td><!--3、书本的简介-->
+                    <td class="single-price" >
+                        ￥33.30
+                    </td><!--4、书本的单价-->
+                    <td class="book-num-to-buy">
+                        <input type="number" min="1" placeholder="1" class="input-num" value="1">
+                    </td><!--5、数量-->
+                    <td class="book-sum-price">
+                        ￥33.30
+                    </td><!--6、总价-->
+                    <td class="operate-options" colspan="2" >
+                        <ul>
+                            <li><a href="javascript:;" class="op">移入收藏夹</a></li>
+                            <li><a href="javascript:;" class="op">删除</a></li>
+                        </ul>
+                    </td><!--7、删除或移入收藏夹-->
+                </tr>
+                <tr class="a-book">
+                    <td class="all-select select-to-buy">
+                        <input type="checkbox" class="select-book select-one-book">
+                    </td><!--1、复选框-->
+                    <td class="book-img" colspan="3">
+                        <img src="images/shopping_cart/你当像鸟.jpg" alt="">
+                    </td><!--2、书本图片-->
+                    <td class="book-description" colspan="4">
+                        <p>你当像鸟飞往你的山（比尔·盖茨年度特别推荐，登顶《纽约时报》畅销榜80 周！多一个人读到这个真实故事，就多...</p>
+                    </td><!--3、书本的简介-->
+                    <td class="single-price" >
+                        ￥29.20
+                    </td><!--4、书本的单价-->
+                    <td class="book-num-to-buy">
+                        <input type="number" min="1" placeholder="1" class="input-num" value="1">
+                    </td><!--5、数量-->
+                    <td class="book-sum-price">
+                        ￥29.20
+                    </td><!--6、总价-->
+                    <td class="operate-options" colspan="2" >
+                        <ul>
+                            <li><a href="javascript:;" class="op">移入收藏夹</a></li>
+                            <li><a href="javascript:;" class="op">删除</a></li>
                         </ul>
                     </td><!--7、删除或移入收藏夹-->
                 </tr>
@@ -153,7 +231,7 @@
     <div class="place-order screen-width">
         <div class="place-oder01">
             <div class="place-oder-left">
-                <input type="checkbox" class="all-select02">
+                <input type="checkbox" class="all-select02 select-book" id="all-select-input02">
                 <label>全选</label>
                 <a href="javascript:;" >批量删除</a>
                 <a href="javascript:;">清除下架商品</a>

@@ -160,10 +160,10 @@ a:hover{
 }
 /*.all-select */input[type="checkbox"]:checked::before{
     content: "\2713";
-    background-color: #fff;
+    background-color: #e50232;
     border: 1px solid #e50232;
     border-radius: 3px;
-    color:#e50232;
+    color:#fff;
     font-size: 17px;
     font-weight: bold;
 }
@@ -177,7 +177,7 @@ a:hover{
 .books-in-shop{
     width: 960px;
    /* height: 600px;*/
-    background-color: #f9f9f9;
+    background-color: #fcfcfc;
     border: #eeeeee 1px solid;
 }
 /*复选框*/
@@ -210,7 +210,7 @@ a:hover{
     text-align: left;
 }
 /*单价*/
-.sigle-price{
+.single-price{
     margin-left: -10px;
 }
 /*数量*/
@@ -218,7 +218,7 @@ a:hover{
     width: 50px;
     height: 20px;
 }
-.sigle-price,.book-num-to-buy,.book-sum-price{
+.single-price,.book-num-to-buy,.book-sum-price{
     width: 100px;
     height: 100px;
 }
