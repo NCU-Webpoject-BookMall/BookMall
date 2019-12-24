@@ -27,6 +27,10 @@ input:focus:-ms-input-placeholder {
 body{
     font-family: SimSun-ExtB,Arial, serif;
 }
+.header a{
+    text-decoration: none;
+    color: #646464;;
+}
 /*让logo,搜索框,和购物车-我的订单模块显示在同一行*/
 .header_nav{
     display: flex;
@@ -175,15 +179,13 @@ body{
     background-color: #abdde5;
     border-right: none;
 }
-.shoppingCart a{
-    color: white;
-}
+
 .order{
     width: 90px;
 }
-.header a{
-    text-decoration: none;
-    color: #646464;;
+
+.shoppingCart a{
+    color: white;
 }
 .currentShow{
     display: block;

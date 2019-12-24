@@ -5,9 +5,77 @@
     <title>轮播</title>
     <link rel="stylesheet" href="css/test.css" />
     <script type="text/javascript" src="js/test.js" ></script>
+    <style>
+        input[type=checkbox]:checked:before{
+            margin-right: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 15px;
+            height: 12px;
+            position: relative;
+            background-color: #9a9a9a;
+        }
+
+        input[type=checkbox]:after {
+            position: absolute;
+            width: 10px;
+            height: 15px;
+            top: 0;
+            content: " ";
+            background-color: #ff0000;
+            color: #fff;
+            display: inline-block;
+            visibility: visible;
+            padding: 0px 3px;
+            border-radius: 3px;
+        }
+
+        input[type=checkbox]:checked:after {
+            content:"\2713";/* "✓";*/
+            font-size: 12px;
+        }
+
+
+
+        input[type=radio] {
+            margin-right: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 15px;
+            height: 12px;
+            position: relative;
+        }
+
+        input[type=radio]:after {
+            position: absolute;
+            width: 10px;
+            height: 15px;
+            top: 0;
+            content: " ";
+            background-color: #ff0000;
+            color: #fff;
+            display: inline-block;
+            visibility: visible;
+            padding: 0px 3px;
+            border-radius: 50%;
+        }
+
+        input[type=radio]:checked:before {
+            content: "✓";
+            display: block;
+            position: relative;
+            top: -2px;
+            left: 3px;
+            width: 6px;
+            height: 6px;
+            color: #fff;
+            font-weight: 400;
+            z-index: 1;
+        }
+    </style>
 </head>
 <body>
-<div class="lun-bo-tu">
+<!--<div class="lun-bo-tu">
     <div id="box">
         <img id="pic" src="images/index/lun-bo-tu-01.jpg" />
         <ul id="list">
@@ -20,9 +88,13 @@
             <li><a href="javascript:;">7</a></li>
             <li><a href="javascript:;">8</a></li>
         </ul>
-        <div class="btn" id="left"> &lt;</div><!--小于号图标-->
-        <div class="btn" id="right">&gt;</div><!--大于号图标-->
+        <div class="btn" id="left"> &lt;</div>&lt;!&ndash;小于号图标&ndash;&gt;
+        <div class="btn" id="right">&gt;</div>&lt;!&ndash;大于号图标&ndash;&gt;
     </div>
-</div>
+</div>-->
+<input type="checkbox" name="method" value="plus">plus<br>
+<input type="checkbox" name="method" value="minus">minus<br>
+<input type="radio" name="method" value="plus">plus<br>
+<input type="radio" name="method" value="minus" checked>minus<br>
 </body>
 </html>
