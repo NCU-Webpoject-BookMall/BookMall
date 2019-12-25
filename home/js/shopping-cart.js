@@ -1,4 +1,5 @@
 var selectedBookNum=0;
+var total_money=0;
 window.onload=function () {
     /*屏幕物理分辨率的宽： window.screen.width*/
     var setWidth=document.getElementsByClassName("screen-width");
@@ -95,6 +96,12 @@ window.onload=function () {
            delBook[j].style.display="none";
         }
     }
+    /*点击结算 跳到下单页面*/
+    var to_pay=document.getElementsByClassName("to-pay")[0];
+    to_pay.onclick=function () {
+        let page="place-order.html?";
+        this.href=page+"total="+total_money;
+    }
 
 };
 /*全选*/
@@ -121,6 +128,17 @@ function selectNone() {
         one[i].checked=false;
     }
 }
+/*判断是否全选*/
+function isSelectAll() {
+    var selectedBook=document.getElementsByClassName("select-one-book");
+    let flag=true;
+    for (let i=0;i<selectedBook.length;i++){
+        if (selectedBook[i].checked==false){
+            flag=false;
+        }
+    }
+    return flag;
+}
 /*计算选中的数量*/
 function countSelectedNum() {
     var selectedBook=document.getElementsByClassName("select-one-book");
@@ -133,17 +151,6 @@ function countSelectedNum() {
     var show_book_num_02=document.getElementById("select-book-num");
     show_book_num_02.innerHTML=" "+selectedBookNum+" ";
     //console.log(selectedBookNum);
-}
-/*判断是否全选*/
-function isSelectAll() {
-    var selectedBook=document.getElementsByClassName("select-one-book");
-    let flag=true;
-    for (let i=0;i<selectedBook.length;i++){
-        if (selectedBook[i].checked==false){
-            flag=false;
-        }
-    }
-    return flag;
 }
 /*根据数量和单价计算总金额*/
 function countMoney() {
@@ -182,4 +189,5 @@ function order_money() {
     }
    // console.log(final_order_money);
     total_price.innerHTML="￥"+final_order_money.toFixed(2);
+    total_money=total_price.innerHTML;
 }

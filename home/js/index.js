@@ -7,9 +7,10 @@ window.onload=function () {
     /*热销榜*/
     hot_sale();
    /*左边栏 鼠标移入移出*/
+    //获取所有的分类
     var left_side=document.getElementsByClassName("left-book-type");
+    //某个分类对应隐藏的图书列表
     var type_one_list=document.getElementsByClassName("type-one-list");
-    //console.log(type_one_list);
     var menu_list=document.getElementsByClassName("menu-list")[0];
     //console.log(left_side.length);
     for (let i=0;i<left_side.length;i++){
@@ -60,8 +61,6 @@ function hot_sale() {
             books_in_bang[i].classList.add("current-show");
         },false);
     }
-
-
 }
 /*新书上架-分页*/
 function newBook_changePages() {
