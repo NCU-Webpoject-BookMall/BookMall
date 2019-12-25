@@ -8,7 +8,7 @@
 /* WebKit browsers */
 input:focus::-webkit-input-placeholder {
     color: transparent;
-    /* transparent是全透明黑色(black)的速记法，即一个类似rgba(0,0,0,0)这样的值 */
+    /* transparent是全透明黑色(black)的速记法，即rgba(0,0,0,0)*/
 }
 /* Mozilla Firefox 4 to 18 */
 input:focus:-moz-placeholder {
