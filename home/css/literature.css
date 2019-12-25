@@ -69,28 +69,11 @@ a{
     margin: 0 auto;
     position: relative;
 }
-.lun-bo-tu .btn{
-    width: 50px;
-    height: 100px;
-    color: #fff;
-    background-color: rgba(0,0,0,0.2);
-    font-size: 40px;
-    text-align: center;
-    line-height: 100px;
-    position: absolute;
-    top: 120px;
-    display: none;
-}
 
-.lun-bo-tu #left{
-    left: 0px;
-}
 .lun-bo-tu #left1{
     left: 0px;
 }
-.lun-bo-tu #right{
-    right: 0px;
-}
+
 .lun-bo-tu #right1{
     right: 0px;
 }
@@ -98,7 +81,7 @@ a{
     list-style: none;
     position: absolute;
     bottom: 20px;
-    left: 230px;
+    left: 200px;
 }
 .lun-bo-tu ul li{
     float: left;
@@ -113,14 +96,15 @@ a{
 .lun-bo-tu ul li a{
     color: #487a6f;
 }
-/*新书上架 栏*/
-.new-book-list{
+/*主编推荐 栏*/
+.editor-recommend-books{
     text-align: center;
 }
 /*icon图标*/
 .icon-new{
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
+    color: #487a6f;
     position: absolute;
     left: 250px;
     top:530px
@@ -131,7 +115,6 @@ a{
     height: 40px;
     text-align: left;
     margin-left: 75px;
-
     border-bottom: #487a6f 1px solid;
 }
 .list-hr span{
@@ -141,24 +124,24 @@ a{
     font-family: "Microsoft Yahei", serif;
 }
 /*书架区*/
-.new-books{
+.books{
 
 }
-.new-books-ul{
+.books-ul{
     margin-top: 30px;
     display: flex;
 }
-.new-books-ul li{
+.books-ul li{
     text-align: left;
     list-style: none;
     margin-right: 40px;
 }
 /*一本书*/
-.new-book{
+.book{
     width: 150px;
     height: 220px;
 }
-.new-book p{
+.book p{
     margin:5px -5px 3px 20px;
 }
 /*书名*/
