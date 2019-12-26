@@ -6,10 +6,10 @@
     <!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_1535851_dxjnv1ypiu.css">-->
     <script src="//at.alicdn.com/t/font_1535851_3sdrfhfu7ck.js"></script><!--页头用到的阿里矢量图标-->
     <script src="//at.alicdn.com/t/font_1569189_xmw6jf63kd9.js"></script><!--页尾所用到的矢量图标-->
-    <script src="//at.alicdn.com/t/font_1583100_31sxijzu1nh.js"></script>
+    <script src="//at.alicdn.com/t/font_1583100_31sxijzu1nh.js"></script><!--猪猪图标-->
+    <script src="//at.alicdn.com/t/font_1583100_9z9emm5o0z6.js"></script><!--书架图标-->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-
     <script src="js/header.js"></script> <script src="js/literature.js"></script>
     <link rel="stylesheet" href="css/literature.css">
 </head>
@@ -110,13 +110,16 @@
     </div>
 </div>
 <!--------------------------------------header------------------------------------------------------->
+<div class="bd screen-head">
+    <svg class="icon icon-head">
+        <use xlink:href="#iconbooks"></use>
+    </svg>
+    <span>图书|文学</span>
+</div>
 <div class="bd screen-width">
     <div class="bd1">
         <div class="bd1_left">
-            <table class="left-side-table">
-                <tr class="head">
-                    <td>图书|文学</td>
-                </tr>
+            <table class="left-side-table1">
                 <tr>
                     <td>
                         <a href="#">中国现当代随笔
@@ -147,9 +150,9 @@
                 <tr>
                     <td>
                         <a href="#">外国随笔
-                        <svg class="icon cla_icon youla-icon" aria-hidden="true">
-                            <use xlink:href="#icon-right"></use>
-                        </svg>
+                            <svg class="icon cla_icon youla-icon" aria-hidden="true">
+                                <use xlink:href="#icon-right"></use>
+                            </svg>
                         </a>
                     </td>
                 </tr>
@@ -209,8 +212,22 @@
                     </svg></a></td>
                 </tr>
             </table>
+            <table class="left-side-table2">
+                    <tr>
+                        <td class="td1">&nbsp;推荐分类</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">&nbsp;特价文学</a>&nbsp;&nbsp;&nbsp;<a href="#">|&nbsp;原版文学</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">&nbsp;文玩拍卖</a>&nbsp;&nbsp;&nbsp;<a href="#">|&nbsp;文学电子书</a> </td>
+                    </tr>
+                </table>
+            <img src="images/literature/bottom1.jpg"><br>
+            <img src="images/literature/bottom2.jpg"><br>
+            <img src="images/literature/bottom3.jpg">
         </div>
-    <!----------左边的那个表格写完啦！！！接下来是中间的轮播图。冲冲冲！！！---------->
+    <!----------左边的那两个表格写完啦！！！接下来是中间的轮播图。冲冲冲！！！---------->
         <div class="bd1_middle">
             <div class="lun-bo-tu">
                 <div id="box">
@@ -231,13 +248,14 @@
                 </div>
             </div>
     <!-------------------------------轮播图写完啦！！！-------------------------------------->
-        <div class="new-book-list">
+        <div class="editor-recommend-books">
             <div class="list-hr">
                 <svg class="icon icon-new">
                     <use xlink:href="#iconzhuzhu"></use>
                 </svg>
                 <span>编推荐</span>
             </div>
+            <!-------这里开始是书籍分页！------------>
             <div class="books">
                 <div class="books-page show-01">
                     <ul class="books-ul">
@@ -598,6 +616,7 @@
              </div>-->
         </div>
     </div>
+        <!-------------------呜呜呜分页不会写，这里开始右边栏叭---------------------->
     <div class="bd1_right">
         <div class="book_new_state">
             <h3 class="" ddt-pit="1">最新动态</h3>
