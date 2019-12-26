@@ -2,12 +2,8 @@ window.onload=function () {
     header();
     /*轮播图效果：*/
     lun_bo_tu();
-    /*右边的轮播图*/
-    slun_bo_tu();
     /*新书上架-分页*/
     newBook_changePages();
-    /*热销榜*/
-    hot_sale();
     /*左边栏 鼠标移入移出*/
     //获取所有的分类
     var left_side=document.getElementsByClassName("left-book-type");
@@ -45,26 +41,8 @@ window.onload=function () {
     }
 
 };
-/*热销榜*/
-function hot_sale() {
-    var hot_sale_bang=document.getElementsByClassName("hot-sale-bang-01");
-    var books_in_bang=document.getElementsByClassName("books-in-bang");
-    books_in_bang[0].classList.add("current-show");
-    /*鼠标移入移出或点击榜单导航栏事件*/
-    for (let i=0;i<hot_sale_bang.length;i++){
-        hot_sale_bang[i].addEventListener("mouseover",function () {
-            // console.log(hot_sale_bang[i].style.width);
-            /*先清除其他榜单的“当前显示”样式*/
-            for (let i=0;i<hot_sale_bang.length;i++){
-                hot_sale_bang[i].classList.remove("current-show-bang");
-                books_in_bang[i].classList.remove("current-show");
-            }
-            hot_sale_bang[i].classList.add("current-show-bang");
-            books_in_bang[i].classList.add("current-show");
-        },false);
-    }
-}
-/*新书上架-分页*/
+
+/*主编推荐-分页*/
 function newBook_changePages() {
     //小圆点
     var change_page_dot=document.getElementsByClassName("change-page-dot");
@@ -95,17 +73,17 @@ function newBook_changePages() {
         pages[currentNum-1].classList.add("current-show");
         //先清除所有圆点颜色
         for (let i=0;i<change_page_dot.length;i++){
-            change_page_dot[i].style.backgroundColor="#487a6f";
+            change_page_dot[i].style.backgroundColor="#17a2b8";
         }
         //再设置当前圆点的颜色
         change_page_dot[currentNum-1].style.backgroundColor="red";
     }
     //第三步：鼠标手动换页
     for (let i=0;i<change_page_dot.length;i++){
-        change_page_dot[i].index=i+1;
+        change_page_dot[i].literature=i+1;
         change_page_dot[i].addEventListener("mouseover",function () {
-            change_page_dot[0].style.backgroundColor = "#487a6f";
-            currentNum=this.index;
+            change_page_dot[0].style.backgroundColor = "#17a2b8";
+            currentNum=this.literature;
             change_page();
         },false);
     }
