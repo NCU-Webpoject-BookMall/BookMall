@@ -26,11 +26,7 @@ window.onload=function () {
         notLogin.style.display="inline-block";
     };
 
-    /*计算购物车里的物品数*/
-    var bookNum=document.getElementsByClassName("a-book");
-    /*更改页面顶部的工具条中的数字*/
-    var show_book_num_01=document.getElementsByClassName("books-num")[0];
-    show_book_num_01.innerHTML=bookNum.length+"";
+
 
     /*全选与取消*/
     var all01=document.getElementById("all-select-input");//获取到点击全选的那个复选框
@@ -61,7 +57,8 @@ window.onload=function () {
         countSelectedNum();
         order_money();
     };
-
+    /*计算购物车里的物品数*/
+    countGoodsNum();
     /*获取被选中的商品数*/
     var books=document.getElementsByClassName("select-one-book");
     for (let i=0;i<books.length;i++){
@@ -91,9 +88,11 @@ window.onload=function () {
     var operate=document.getElementsByClassName("op");
     var delBook=document.getElementsByClassName("a-book");
     for (let i=0;i<operate.length;i++){
-        let j=Math.ceil(i/2);
+        let j=Math.floor(i/2);
         operate[i].onclick=function () {
-           delBook[j].style.display="none";
+            console.log(i+" "+j);
+            delBook[j].style.display="none";
+            countGoodsNum();
         }
     }
     /*点击结算 跳到下单页面*/
@@ -104,6 +103,13 @@ window.onload=function () {
     }
 
 };
+/*计算购物车里的物品数*/
+function countGoodsNum() {
+    var bookNum=document.getElementsByClassName("a-book");
+    /*更改页面顶部的工具条中的数字*/
+    var show_book_num_01=document.getElementsByClassName("books-num")[0];
+    show_book_num_01.innerHTML=bookNum.length+"";
+}
 /*全选*/
 function selectAll() {
     let all01=document.getElementById("all-select-input");//获取到点击全选的那个复选框
