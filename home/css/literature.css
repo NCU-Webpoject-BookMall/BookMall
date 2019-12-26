@@ -168,7 +168,7 @@ a{
 
 /*书架区*/
 .books{
-
+    height: 500px;
 }
 .books-ul{
     margin-top: 30px;
