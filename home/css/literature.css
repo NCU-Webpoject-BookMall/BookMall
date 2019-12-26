@@ -1,3 +1,9 @@
+.right-icon{
+    position: absolute;
+    top: 155px;
+    left: 190px;
+    color: #fafafa;
+}
 body{
     text-align: center;
     padding: 0;
