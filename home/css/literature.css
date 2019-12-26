@@ -1,3 +1,9 @@
+.right-icon{
+    position: absolute;
+    top: 155px;
+    left: 190px;
+    color: #fafafa;
+}
 body{
     text-align: center;
     padding: 0;
@@ -166,25 +172,51 @@ a{
     font-family: "Microsoft Yahei", serif;
 }
 
-/*书架区*/
-.books{
-    height: 500px;
+/*新书上架 栏*/
+.new-book-list{
+    text-align: center;
 }
-.books-ul{
+/*icon图标*/
+.icon-new{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 250px;
+    top:580px
+}
+/*顶端分割线*/
+.list-hr{
+    width: 695px;
+    height: 40px;
+    text-align: left;
+    margin-left: 75px;
+    border-bottom: #17a2b8 1px solid;
+}
+.list-hr span{
+    font-size: 20px;
+    color: #17a2b8;
+    /* margin-left: 75px;*/
+    font-family: "Microsoft Yahei", serif;
+}
+/*书架区*/
+.new-books{
+
+}
+.new-books-ul{
     margin-top: 30px;
     display: flex;
 }
-.books-ul li{
+.new-books-ul li{
     text-align: left;
     list-style: none;
     margin-right: 40px;
 }
 /*一本书*/
-.book{
+.new-book{
     width: 150px;
     height: 220px;
 }
-.book p{
+.new-book p{
     margin:5px -5px 3px 20px;
 }
 /*书名*/
@@ -219,7 +251,7 @@ a{
     width: 20px;
     height: 20px;
     margin-left: 10px;
-    background-color: #487a6f;
+    background-color: #17a2b8;
     text-align: center;
     line-height: 20px;
     border-radius: 50%;
@@ -258,6 +290,8 @@ a{
 .state-detail a:hover{
     text-decoration: underline;
 }
+
+/*精彩专题*/
 .goodbook_news{
     width: 220px;
     font-family: "Microsoft Yahei", serif;
@@ -276,104 +310,4 @@ a{
     padding-left: 12px;
     margin: 10px 0 5px 0;
 }
-/*新书预售*/
-.new-book-for-sale{
-    margin-top: 15px;
-    width: 220px;
-    height: 180px;
-    font-family: "Microsoft Yahei", serif;
-    text-align: left;
-    border: 1px solid #d8d8d8;
-}
-.new-book-for-sale h4{
-    padding-left: 12px;
-    margin: 10px 0 5px 0;
-}
-.book-form{
-    display: flex;
-}
-.book-form a{
-    font-size: 12px;
-    color: #1b1e21;
-}
-.book-form a .p01{
-    font-size: 15px;
-    color: red;
-}
-.book-form a .p02{
-    font-size: 15px;
-    color: #9d9d9d;
-}
-/*热销榜*/
-/*icon图标*/
-.hot-sale-bang-icon{
-    width: 30px;
-    height: 30px;
-}
-.hot-sale-bang-title{
-    margin-top: 28px;
-    font-family: "Microsoft Yahei", serif;
-    font-weight: bolder;
-    font-size: 17px;
-    text-align: left;
-}
-.hot-sale-bang{
-    /* margin-top: 60px;*/
-    width: 220px;
-    height: 550px;
-    font-family: "Microsoft Yahei", serif;
-    text-align: left;
-    border: 1px solid #d8d8d8;
-}
-/*榜单分类*/
-.hot-sale-bang-nav{
-    display: flex;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-.hot-sale-bang-01{
-    width: 20%;
-    list-style: none;
-    border-bottom: 1px solid #d8d8d8;
-    border-right: 1px solid #d8d8d8;
-}
-/*鼠标移入移出决定当前显示的榜单*/
-.current-show-bang{
-    border-bottom: none;
-    color: #487a6f;
-    border-top:  #487a6f 2px solid;
-}
-.hot-sale-bang-01 a{
-    font-weight: bolder;
-    font-size: 13px;
-    color: #7a7a7a;
-}
-/*榜单上具体的书单*/
-.books-in-bang{
-    padding:0;
-    display: none;
-}
-.books-in-bang li{
-    list-style: none;
-    display: flex;
-    width: 210px;
-    height: 35px;
-    overflow: hidden;
-    border-bottom: 1px solid #d8d8d8;
-}
-.books-in-bang li h5{
-    margin: 7px 10px;
-}
-.books-in-bang li a{
-    font-size: 12px;
-    line-height: 30px;
-    color: #7a7a7a;
-}
-.books-in-bang li a:hover{
-    color: orange;
-}
-/*前三名高亮*/
-.between-03 h5{
-    color: red;
-}
+
