@@ -1,44 +1,68 @@
 /*全局*/
+/*.details{*/
+/*    width: 1280px;*/
+/*    height: 450px;*/
+/*}*/
 .details{
-    width: 1280px;
-    height: 450px;
+    width: 100%;
+
+
 }
 a{
     text-decoration:none;
     color: #1b1e21;
 }
 /*图片展示区*/
+/*.large_image{*/
+/*    margin-left: 30px;*/
+/*    width: 500px;*/
+/*    height: 450px;*/
+/*    align-content: center;*/
+/*}*/
 .large_image{
     margin-left: 30px;
-    width: 500px;
-    height: 450px;
+    width: 40%;
+    height: 500px;
     align-content: center;
+    display: inline-block;
 }
 .large_image_pic{
-    width: 500px;
-    height: 400px;
+    width: 100%;
+    height: 450px;
     align-content: center;
 }
 
 #BigImg {
-    width: 500px;
-    height: 400px
+    width: 100%;
+    height: 450px
+}
+.img_list{
+    width: 100%;
+    height: 50px;
 }
 /*图书详情页面*/
 /*标题区*/
+/*.name_info {*/
+/*    position: absolute;*/
+/*    left: 575px;*/
+/*    top:210px;*/
+/*    width: 680px;*/
+/*    height: 450px;*/
+/*}*/
 .name_info {
-    position: absolute;
-    left: 575px;
-    top:210px;
-    width: 680px;
-    height: 450px;
+    /*position: relative;*/
+    /*top:0px;*/
+    /*margin-top: 0px;*/
+    width: 50%;
+    height: 550px;
+    display: inline-block;
 }
 /*价格区*/
 .price_pc{
     margin-top: 20px;
     width: 410px;
     height: 70px;
-    background-color: #9fcdff;
+
 }
 
 .button_red{
