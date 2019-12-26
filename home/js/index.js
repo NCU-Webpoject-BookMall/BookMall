@@ -41,7 +41,6 @@ window.onload=function () {
             type_one_list[i].classList.remove("current-show");
         }
     }
-
 };
 /*热销榜*/
 function hot_sale() {
@@ -163,7 +162,6 @@ function lun_bo_tu() {
         changeIMG();
     }, false);
     right_btn.addEventListener("click", startloop, false);
-
     function deep() {
         this.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
@@ -180,7 +178,6 @@ function lun_bo_tu() {
             changeIMG();
         }, false);
     }
-
 }
 //将NodeList转换成Array
 function transformList(list) {

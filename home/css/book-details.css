@@ -1,24 +1,13 @@
 /*全局*/
-/*.details{*/
-/*    width: 1280px;*/
-/*    height: 450px;*/
-/*}*/
+
 .details{
     width: 100%;
-
-
 }
 a{
     text-decoration:none;
     color: #1b1e21;
 }
 /*图片展示区*/
-/*.large_image{*/
-/*    margin-left: 30px;*/
-/*    width: 500px;*/
-/*    height: 450px;*/
-/*    align-content: center;*/
-/*}*/
 .large_image{
     margin-left: 30px;
     width: 40%;
@@ -41,14 +30,6 @@ a{
     height: 50px;
 }
 /*图书详情页面*/
-/*标题区*/
-/*.name_info {*/
-/*    position: absolute;*/
-/*    left: 575px;*/
-/*    top:210px;*/
-/*    width: 680px;*/
-/*    height: 450px;*/
-/*}*/
 .name_info {
     /*position: relative;*/
     /*top:0px;*/
@@ -62,9 +43,7 @@ a{
     margin-top: 20px;
     width: 410px;
     height: 70px;
-
 }
-
 .button_red{
     margin-top: 30px;
     margin-right: 30px;
@@ -76,9 +55,7 @@ a{
     color:white;
     border-radius:10px;
     position:relative
-
 }
-
 .button_bule{
     position:relative;
     margin-top: 30px;

@@ -25,9 +25,6 @@ window.onload=function () {
         successLogin.style.display="none";
         notLogin.style.display="inline-block";
     };
-
-
-
     /*全选与取消*/
     var all01=document.getElementById("all-select-input");//获取到点击全选的那个复选框
     var all02=document.getElementById("all-select-input02");
@@ -95,13 +92,12 @@ window.onload=function () {
             countGoodsNum();
         }
     }
-    /*点击结算 跳到下单页面*/
+   /* /!*点击结算 跳到下单页面*!/
     var to_pay=document.getElementsByClassName("to-pay")[0];
     to_pay.onclick=function () {
         let page="place-order.html?";
         this.href=page+"total="+total_money;
-    }
-
+    }*/
 };
 /*计算购物车里的物品数*/
 function countGoodsNum() {
