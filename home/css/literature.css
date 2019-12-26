@@ -1,39 +1,307 @@
-.top{
+body{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.bd1{
+    display: flex;
+    text-align: center;
+
+}
+.screen-head{
     height: 40px;
+    margin-bottom: 7px;
+    text-align: left;
+
 }
-.top .top_operate{
+.icon-head{
+    width: 36px;
+    height: 36px;
+    color: #17a2b8;
+    position: absolute;
+    left: 30px;
+    top:200px
+}
+.screen-head span{
+    font-size: 20px;
+    color: #17a2b8;
+    margin-left: 80px;
+    /* margin-left: 75px;*/
+    font-family: "Microsoft Yahei", serif;
+}
+/*左边栏*/
+.bd1_left{
+    margin-left: 30px;
+}
+.left-side-table1{
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    width: 200px;
     overflow: hidden;
-    margin-left: 15px;
-    font-family: 黑体, serif;
-}
-.top .top_operate li{
-    display: inline-block;
-    border-left: #17a2b8 1px solid;
-    padding-left: 8px;
-    font-size: 16px;
+    text-align: left;
+    font-size: 15px;
     font-weight: bold;
+    line-height: 35px;
 }
-.top .top_operate a:hover{
+/*每一行*/
+.left-side-table1 tr{
+    border: 1px #17a2b8 solid;
+    font-family: "Microsoft Yahei", serif;
+}
+.left-side-table1 tr a{
+    text-decoration: none;
     color: #17a2b8;
 }
-#h{
-    border-left: none;
+.left-side-table1 tr a:hover{
+    color: #abdde5;
+}
+
+/*右拉图标*/
+.youla-icon{
+    position: relative;
+    top: 10px;
+    float: right;
+    right: 10px;
+    color: #17a2b8;
+    opacity: 0.5;
+}
+.left-side-table2{
+    border: 1px #17a2b8 solid;
+    border-collapse: collapse;
+    padding: 0;
+    margin-top: 17px;
+    width: 200px;
+    overflow: hidden;
+    text-align: left;
+    line-height: 35px;
+}
+.left-side-table2 .td1{
+    font-family: "Microsoft Yahei", serif;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 5px;
+    color: #17a2b8;
 }
-.classify{
-    border-top: #17a2b8 1px solid;
-    width: 800px;
-    padding-left: 60px;
+.left-side-table2 td a{
+    font-size: 15px;
+    color: #17a2b8;
+    font-family: "Microsoft Yahei", serif;
 }
-.classify .left{
-    margin-top: auto;
-    width: 140px;
-    border-left: #95999c 1px solid;
+.left-side-table2 tr a:hover{
+    color: #abdde5;
 }
-.classify .left .allStage{
+.bd1_left img{
+    width: 200px;
+    margin-bottom: 10px;
+
+}
+/*轮播图效果*/
+.lun-bo-tu #box{
+    width: 790px;
+    height: 340px;
+    margin: 0 auto;
+    position: relative;
+}
+.lun-bo-tu #box1{
+    width: 790px;
+    height: 340px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.lun-bo-tu #left1{
+    left: 0px;
+}
+
+.lun-bo-tu #right1{
+    right: 0px;
+}
+.lun-bo-tu ul {
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+}
+.lun-bo-tu ul li{
+    float: left;
+    width: 20px;
+    height: 20px;
     margin-left: 10px;
+    background-color: #aaa;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
 }
-.classify .left .allStage a{
-    color: #95999c;
+.lun-bo-tu ul li a{
+    color: #17a2b8;
 }
+/*主编推荐 栏*/
+.editor-recommend-books{
+    text-align: center;
+}
+/*icon图标*/
+.icon-new{
+    width: 55px;
+    height: 55px;
+    color: #17a2b8;
+    position: absolute;
+    left: 250px;
+    top:580px
+}
+/*顶端分割线*/
+.list-hr{
+    width: 695px;
+    height: 40px;
+    text-align: left;
+    margin-left: 75px;
+    border-bottom: #17a2b8 1px solid;
+}
+.list-hr span{
+    font-size: 20px;
+    color: #17a2b8;
+    /* margin-left: 75px;*/
+    font-family: "Microsoft Yahei", serif;
+}
+
+/*新书上架 栏*/
+.new-book-list{
+    text-align: center;
+}
+/*icon图标*/
+.icon-new{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 250px;
+    top:580px
+}
+/*顶端分割线*/
+.list-hr{
+    width: 695px;
+    height: 40px;
+    text-align: left;
+    margin-left: 75px;
+    border-bottom: #17a2b8 1px solid;
+}
+.list-hr span{
+    font-size: 20px;
+    color: #17a2b8;
+    /* margin-left: 75px;*/
+    font-family: "Microsoft Yahei", serif;
+}
+/*书架区*/
+.new-books{
+
+}
+.new-books-ul{
+    margin-top: 30px;
+    display: flex;
+}
+.new-books-ul li{
+    text-align: left;
+    list-style: none;
+    margin-right: 40px;
+}
+/*一本书*/
+.new-book{
+    width: 150px;
+    height: 220px;
+}
+.new-book p{
+    margin:5px -5px 3px 20px;
+}
+/*书名*/
+.book-name a{
+    font-size: 15px;
+    color: #1b1e21;
+}
+/*作者名*/
+.book-author{
+    font-size: 13px;
+    color: #9a9a9a;
+}
+/*价格*/
+.book-price{
+    font-size: 18px;
+    color: red;
+}
+/*分页*/
+.books-page{
+    display: none;
+}
+/*可点击的分页图标*/
+.change-page{
+    display: flex;
+    text-align: center;
+    width: 120px;
+    padding-left: 300px;
+    margin-top: 30px;
+}
+.change-page-dot{
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: #17a2b8;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+.change-page-dot a{
+    color: white;
+}
+
+/*右边栏*/
+/*书讯快递*/
+.book_news{
+    width: 220px;
+    height: 110px;
+    font-family: "Microsoft Yahei", serif;
+    text-align: left;
+    border: 1px solid #d8d8d8;
+    margin-bottom: 10px;
+}
+.book_news h4{
+    color: #17a2b8;
+    padding-left: 12px;
+    margin: 10px 0 5px 0;
+}
+.book_news-list{
+    position: relative;
+    bottom: 10px;
+    padding-left: 15px;
+}
+.state-detail{
+    list-style: none;
+}
+.state-detail a{
+    color: #1b1e21;
+    font-size: 12px;
+}
+.state-detail a:hover{
+    text-decoration: underline;
+}
+
+/*精彩专题*/
+.goodbook_news{
+    width: 220px;
+    font-family: "Microsoft Yahei", serif;
+    text-align: left;
+    border: 1px solid #d8d8d8;
+    margin-bottom: 10px;
+}
+.goodbook_news img{
+    padding-left: 8px;
+    margin-bottom: 10px;
+    width: 204px;
+    height: 130px;
+}
+.goodbook_news h4{
+    color: #17a2b8;
+    padding-left: 12px;
+    margin: 10px 0 5px 0;
+}
+
