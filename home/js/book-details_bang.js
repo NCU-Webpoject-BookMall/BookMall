@@ -1,6 +1,7 @@
 function onpicture(srcs) {
     var img_large=document.getElementById("BigImg");
-    img_large.setAttribute("src",srcs);
+    var s="images/book-details/big/"+srcs;
+    img_large.setAttribute("src",s);
 }
 
 //商品被选中有阴影效果
