@@ -10,6 +10,7 @@ window.onload=function () {
     //某个分类对应隐藏的图书列表
     var type_one_list=document.getElementsByClassName("type-one-list");
     var menu_list=document.getElementsByClassName("menu-list")[0];
+    console.log(menu_list);
     //console.log(left_side.length);
     for (let i=0;i<left_side.length;i++){
         left_side[i].onmouseout=function () {
@@ -48,6 +49,7 @@ function newBook_changePages() {
     var change_page_dot=document.getElementsByClassName("change-page-dot");
     //所有的页
     var pages=document.getElementsByClassName("books-page");
+    console.log(pages);
     //第一步 ：第一个按钮设置为红色
     change_page_dot[0].style.backgroundColor = "red";
     pages[0].classList.add("current-show");
