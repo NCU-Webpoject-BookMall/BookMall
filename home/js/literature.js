@@ -55,8 +55,8 @@ function newBook_changePages() {
     }
 }
 /*轮播图*/
-function lun_bo_tu() {
-    var lun_bo_tu=document.getElementsByClassName("lun-bo-tu")[0];
+function roll() {
+    var roll=document.getElementsByClassName("roll")[0];
     var box =document.getElementById("box");
     var ul = document.getElementById("list");
     var img =document.getElementById("pic");
@@ -79,7 +79,7 @@ function lun_bo_tu() {
         if(currentNUM == 12) {
             currentNUM = 1;
         }
-        img.src="images/literature/lun-bo-tu-0"+currentNUM+".jpg";
+        img.src="images/literature/roll-0"+currentNUM+".jpg";
         //清空小圆点颜色，改变下一个颜色
         for(var i = 0; i < allLi.length; i++) {
             allLi[i].style.backgroundColor = "#aaa";

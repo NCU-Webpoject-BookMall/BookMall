@@ -108,33 +108,33 @@ a{
     display: block!important;
 }
 /*轮播图效果*/
-.lun-bo-tu #box{
+.roll #box{
     width: 790px;
     height: 340px;
     margin: 0 auto;
     position: relative;
 }
-.lun-bo-tu #box1{
+.roll #box1{
     width: 790px;
     height: 340px;
     margin: 0 auto;
     position: relative;
 }
 
-.lun-bo-tu #left1{
+.roll #left1{
     left: 0px;
 }
 
-.lun-bo-tu #right1{
+.roll #right1{
     right: 0px;
 }
-.lun-bo-tu ul {
+.roll ul {
     list-style: none;
     position: absolute;
     bottom: 20px;
     left: 200px;
 }
-.lun-bo-tu ul li{
+.roll ul li{
     float: left;
     width: 20px;
     height: 20px;
@@ -144,7 +144,7 @@ a{
     line-height: 20px;
     border-radius: 50%;
 }
-.lun-bo-tu ul li a{
+.roll ul li a{
     color: #17a2b8;
 }
 /*主编推荐 栏*/

@@ -1,7 +1,7 @@
 window.onload=function () {
     header();
     /*轮播图效果：*/
-    lun_bo_tu();
+    roll();
     /*新书上架-分页*/
     newBook_changePages();
 
@@ -55,18 +55,16 @@ function newBook_changePages() {
     }
 }
 /*轮播图*/
-function lun_bo_tu() {
-    var lun_bo_tu=document.getElementsByClassName("lun-bo-tu")[0];
+function roll() {
+    var roll=document.getElementsByClassName("roll")[0];
     var box =document.getElementById("box");
     var ul = document.getElementById("list");
     var img =document.getElementById("pic");
     var left_btn =document.getElementById("left");
     var right_btn = document.getElementById("right");
     var allLi =document.getElementsByClassName("li");
-    //第一步 ：第一个按钮设置为红色
     var currentNUM = 1;
     allLi[0].style.backgroundColor = "red";
-    //第二步：让图片循环改变
     var timer = setInterval(startloop, 2000);
     function startloop() {
         currentNUM++;
@@ -79,7 +77,7 @@ function lun_bo_tu() {
         if(currentNUM == 9) {
             currentNUM = 1;
         }
-        img.src="images/history/lun-bo-tu-0"+currentNUM+".jpg";
+        img.src="images/history/roll-0"+currentNUM+".jpg";
         //清空小圆点颜色，改变下一个颜色
         for(var i = 0; i < allLi.length; i++) {
             allLi[i].style.backgroundColor = "#aaa";
