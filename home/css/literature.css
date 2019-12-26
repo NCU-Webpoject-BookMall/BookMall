@@ -227,20 +227,25 @@ a{
 .change-page-dot a{
     color: white;
 }
+
 /*右边栏*/
-/*最新动态*/
-.book_new_state{
+/*书讯快递*/
+.book_news{
     width: 220px;
-    height: 120px;
+    height: 110px;
     font-family: "Microsoft Yahei", serif;
     text-align: left;
     border: 1px solid #d8d8d8;
+    margin-bottom: 10px;
 }
-.book_new_state h4{
+.book_news h4{
+    color: #17a2b8;
     padding-left: 12px;
     margin: 10px 0 5px 0;
 }
-.book_new_state-list{
+.book_news-list{
+    position: relative;
+    bottom: 10px;
     padding-left: 15px;
 }
 .state-detail{
@@ -251,7 +256,25 @@ a{
     font-size: 12px;
 }
 .state-detail a:hover{
-    color: orange;
+    text-decoration: underline;
+}
+.goodbook_news{
+    width: 220px;
+    font-family: "Microsoft Yahei", serif;
+    text-align: left;
+    border: 1px solid #d8d8d8;
+    margin-bottom: 10px;
+}
+.goodbook_news img{
+    padding-left: 8px;
+    margin-bottom: 10px;
+    width: 204px;
+    height: 130px;
+}
+.goodbook_news h4{
+    color: #17a2b8;
+    padding-left: 12px;
+    margin: 10px 0 5px 0;
 }
 /*新书预售*/
 .new-book-for-sale{

@@ -2,6 +2,8 @@ window.onload=function () {
     header();
     /*轮播图效果：*/
     lun_bo_tu();
+    /*右边的轮播图*/
+    slun_bo_tu();
     /*新书上架-分页*/
     newBook_changePages();
     /*热销榜*/
@@ -165,6 +167,7 @@ function lun_bo_tu() {
         }, false);
     }
 }
+
 //将NodeList转换成Array
 function transformList(list) {
     var arr = [];
