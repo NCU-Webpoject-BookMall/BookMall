@@ -74,12 +74,12 @@ function lun_bo_tu() {
     }
     function changeIMG() {
         if(currentNUM == 0) {
-            currentNUM = 11;
+            currentNUM = 8;
         }
-        if(currentNUM == 12) {
+        if(currentNUM == 9) {
             currentNUM = 1;
         }
-        img.src="images/literature/lun-bo-tu-0"+currentNUM+".jpg";
+        img.src="images/history/lun-bo-tu-0"+currentNUM+".jpg";
         //清空小圆点颜色，改变下一个颜色
         for(var i = 0; i < allLi.length; i++) {
             allLi[i].style.backgroundColor = "#aaa";
