@@ -1,0 +1,109 @@
+﻿.li1{
+    margin: 5px;
+    display: block;
+    min-width:200px;
+    padding: 6px 12px;
+    background-color:#cce5ff;
+    color: #333;
+    line-height: 1.42857143;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size:20px;
+    float:left;
+    list-style:none;
+}
+.li2 {
+  background: #ffe5e5;
+  min-width:100px;
+   text-align: center;
+  padding: 6px 12px;
+  float:left;
+  list-style:none;
+}
+
+ul{
+  background: #cce5ff;
+  margin: 5px;
+}
+body{
+	font-family: "Oswald", "Open Sans", sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	width:100%;
+	height:100%;
+	background:#FFFFFF;
+
+}
+.mytable001{
+	width:99%;
+	border-collapse:collapse;
+	margin:0px auto;
+}
+.mytbody001{
+	border:1px solid #E7E7E7;
+	margin-top:5px;
+	
+}
+td{
+	text-align:center;
+}
+
+.mytr001{
+	background:#F5F5F5;
+	height:35px;
+}
+.mytr002{
+
+	height:95px;
+}
+.mytd001{
+	text-align:left;
+}
+
+.mer_img{
+	float:left;
+	margin-left:10px;
+	width:25%;
+}
+.mer_txt{
+	width:65%;
+	float:left;
+	word-wrap:break-word;
+}
+
+
+.mycheckbox001{
+	margin-left:10px;
+}
+
+/******************以下为th中的td*****************************/
+.mytdF001{
+	width:30%;
+}
+.mytdF002{
+	width:10%;
+}
+.mytdF003{
+	width:12%;
+}
+.mytdF004{
+	width:16%;
+}
+.mytrF001{
+	height:35px;
+}
+/*****************************span*******************************/
+.myspan002{
+	margin-left:5px;
+}
+.myspan004{
+	border:1px solid #E7E7E7;
+}
+.myspan005{
+	font-size: 9px;
+}
