@@ -92,12 +92,12 @@ window.onload=function () {
             countGoodsNum();
         }
     }
-   /* /!*点击结算 跳到下单页面*!/
+    /*点击结算 跳到下单页面*/
     var to_pay=document.getElementsByClassName("to-pay")[0];
     to_pay.onclick=function () {
         let page="place-order.html?";
         this.href=page+"total="+total_money;
-    }*/
+    }
 };
 /*计算购物车里的物品数*/
 function countGoodsNum() {
