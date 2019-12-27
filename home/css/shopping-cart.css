@@ -312,3 +312,44 @@ a:hover{
     font-size: 18px;
     font-weight: bolder;
 }
+/*配送地区*/
+.areaList{
+    width: 180px;
+    height: 80px;
+    text-align: left;
+    background-color: #69bbd3;
+    padding-left: 20px;
+    display: none;
+    z-index: 1;
+}
+.content-middle{
+    z-index: 0;
+}
+.city{
+    display: inline-block;
+}
+.input-area{
+    margin-top: 17px;
+    width: 250px;
+    height: 25px;
+}
+/* 点击搜索框获取焦点 placeholder消失-开始 */
+/* WebKit browsers */
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+    /* transparent是全透明黑色(black)的速记法，即rgba(0,0,0,0)*/
+}
+/* Mozilla Firefox 4 to 18 */
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+/* Mozilla Firefox 19+ */
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+/* Internet Explorer 10+ */
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+/* 点击搜索框获取焦点 placeholder消失-结束 */
+

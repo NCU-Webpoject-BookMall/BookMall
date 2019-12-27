@@ -11,6 +11,26 @@ window.onload=function () {
     var showArea=document.getElementsByClassName("show-area")[0];
     var rest_margin01=window.screen.width-18-960;
     showArea.style.margin="0 "+rest_margin01/2+"px";
+
+    /*var areaList=document.getElementsByClassName("areaList")[0];
+    areaList.style.margin="5px"+" "+(rest_margin01/2)+"px";
+    /!*配送地区*!/
+    var to_area=document.getElementsByClassName("to-area")[0];
+    to_area.onmouseover=function () {
+      areaList.style.display="block";
+    };
+    to_area.onmouseout=function () {
+      areaList.style.display="none";
+    };
+    var show_area_city=document.getElementsByClassName("show-area-city")[0];
+    /!*所有城市*!/
+    var city=document.getElementsByClassName("city");
+    for (let  i=0;i<city.length;i++){
+        city[i].onclick=function () {
+            show_area_city.innerHTML=city[i].innerHTML;
+        };
+    }*/
+
     /*根据不同页面调整中间区域位置*/
     var content_middle=document.getElementsByClassName("content-middle")[0];
     var rest_margin02=window.screen.width-18-960;
@@ -95,8 +115,13 @@ window.onload=function () {
     /*点击结算 跳到下单页面*/
     var to_pay=document.getElementsByClassName("to-pay")[0];
     to_pay.onclick=function () {
-        let page="place-order.html?";
-        this.href=page+"total="+total_money;
+        if (selectedBookNum==0){
+            alert("请至少选择一件商品");
+        }
+      else {
+            let page="place-order.html?";
+            this.href=page+"total="+total_money;
+        }
     }
 };
 /*计算购物车里的物品数*/

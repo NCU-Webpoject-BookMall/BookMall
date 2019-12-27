@@ -57,13 +57,16 @@
           /*text-decoration: none;*/
           color: #9a9a9a;
       }
+        .showUser{
+            width: 200px;
+        }
     </style>
     <script src="js/place-order.js"></script>
 </head>
 <body>
 <div class="header">
     <div class="tools screen-width">
-        <div class="tools_area">
+        <div class="tools_area" style="display: none">
             配送至：
             <a href="javascript:;" class="currentArea">北京</a>
             <div class="icon_xiala">
@@ -91,8 +94,11 @@
             </ul>
         </div>
         <div class="tools_login"></div>
+        <div class="showUser">
+            <span style="color: red;padding-top: 20px;line-height: 40px">hi,157****6814</span>
+        </div>
         <ul class="tools_operate">
-            <li id="login"><a href="login.html" target="_blank" >登录</a></li>
+          <!--  <li id="login"><a href="login.html" target="_blank" >登录</a></li>-->
             <li id="toBeMembership"><a href="https://www.baidu.com/" >成为会员</a></li>
             <li><a href="https://www.baidu.com/">我的云书房</a></li>
             <li><a href="https://www.baidu.com/">我的book</a></li>
@@ -100,7 +106,7 @@
             <li><a href="https://www.baidu.com/">小说投稿</a></li>
             <li><a href="https://www.baidu.com/">我要出书</a></li>
             <li><a href="https://www.baidu.com/">企业采购</a></li>
-            <li><a href="https://www.baidu.com/">客户服务</a></li>
+           <!-- <li><a href="https://www.baidu.com/">客户服务</a></li>-->
         </ul>
     </div>
 </div>
@@ -125,7 +131,7 @@
            </div>
         </div>
         <div class="end-pay">
-            <a href="my-order.html" class="end-pay-a">我已支付完成</a>
+            <a href="my-order.html" class="end-pay-a">其他支付方式</a>
         </div>
     </div>
 </div>
