@@ -18,12 +18,12 @@ function roll() {
     }
     function changeIMG() {
         if(currentNUM == 0) {
-            currentNUM = 11;
+            currentNUM = 8;
         }
-        if(currentNUM == 12) {
+        if(currentNUM == 9) {
             currentNUM = 1;
         }
-        img.src="images/literature/roll-0"+currentNUM+".jpg";
+        img.src="images/history/roll-0"+currentNUM+".jpg";
         for(var i = 0; i < allLi.length; i++) {
             allLi[i].style.backgroundColor = "#aaa";
         }
@@ -34,7 +34,6 @@ function roll() {
         allLi[i].addEventListener("mouseover", function() {
             allLi[0].style.backgroundColor = "#aaa";
             currentNUM = this.literature;
-            //console.log(currentNUM);
             changeIMG();
         }, false);
     }

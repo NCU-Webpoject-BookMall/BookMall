@@ -1,22 +1,18 @@
-
 a{
     text-decoration:none;
     color: #1b1e21;
 }
-
  .shakeimage{
      position:relative
  }
 .images{
     text-align: center;
 }
-
 .bang_index_list{
     padding-left:50px;
     width: 1180px;
     height: 500px;
 }
-
 .bang_index_list_head{
     width: 1180px;
     height: 40px;
@@ -24,7 +20,6 @@ a{
     display: flex;
     overflow: hidden;
     border-top: #69bbd3 3px solid;
-
 }
 .bang_index_list_title{
     font-size: 20px;
@@ -33,7 +28,6 @@ a{
     height: 40px;
     margin-top:0px;
 }
-
 .bang_index_list_tab{
 
     width: 980px;
@@ -44,9 +38,7 @@ a{
     overflow: hidden;
     align-content: center;
 }
-
 .bang_index_list_tab_big{
-
     list-style: none;
     margin-left: 10px;
     color: #323232;
@@ -57,8 +49,6 @@ a{
     height: 20px;
     margin-top: 20px;
     overflow: hidden;
-
-
 }
 .bang_index_list_tab_small{
     list-style: none;
@@ -75,7 +65,6 @@ a{
 .bang_index_list_tab li a:hover{
     color:#69bbd3;
 }
-
 .bang_index_list_body{
     margin-top: 20px;
     width: 1180px;
